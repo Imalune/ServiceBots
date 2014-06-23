@@ -21,6 +21,8 @@ public class BotBlocks {
     public static IronChunk itemIronChunk;
     public static SparkStarter itemSparkStarter;
     public static Starter itemStarter;
+    public static CBuilderBot blockCBuilderBot;
+    public static CEleBot blockCEleBot;
 
     public static void init(){
         blockBotSide = new BotSide(Material.iron);
@@ -37,6 +39,8 @@ public class BotBlocks {
         itemIronChunk = new IronChunk();
         itemSparkStarter = new SparkStarter();
         itemStarter = new Starter();
+        blockCBuilderBot = new CBuilderBot(Material.iron);
+        blockCEleBot = new CEleBot(Material.iron);
 
         GameRegistry.registerBlock(blockBotSide,"BotSide");
         GameRegistry.registerBlock(blockBotStation,"BotStation");
@@ -52,5 +56,7 @@ public class BotBlocks {
         GameRegistry.registerItem(itemIronChunk,"IronChunk");
         GameRegistry.registerItem(itemSparkStarter,"SparkStarter");
         GameRegistry.registerItem(itemStarter,"Starter");
+        GameRegistry.registerBlock(blockCBuilderBot,"CompactBuilderBot");
+        GameRegistry.registerBlock(blockCEleBot,"CompactEleBot");
     }
 }
