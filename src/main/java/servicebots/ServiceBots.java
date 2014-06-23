@@ -19,8 +19,8 @@ import servicebots.creativetab.CreativeTab;
 public class ServiceBots {
     public static final String MODID = "ServiceBots";
     public static final CreativeTabs cTab = new CreativeTab();
+    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.CProxy");
     public static ProxyCommon proxy;
-    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.ProxyClient");
 
     @Mod.EventHandler
     public void ini(FMLPreInitializationEvent nevent)
