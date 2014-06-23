@@ -26,22 +26,14 @@ public class BotBlocks {
     public static CEleBot blockCEleBot;
 
     public static void init(){
-        blockBotSide = new BotSide(Material.iron);
-        blockBotStation = new BotStation(Material.iron);
-        blockBotSteelGenerator = new BotSteelGenerator(Material.iron);
-        blockChargeBlock = new ChargeBlock(Material.iron);
-        blockEZBotMover = new EZBotMover(Material.iron);
-        blockFaceConsole = new FaceConsole(Material.iron);
+                blockFaceConsole = new FaceConsole(Material.iron);
         itemConsole = new Console();
         itemBotSteel = new BotSteel();
-        itemCompactor = new Compactor();
         itemCompactorChip = new CompactorChip();
         itemHoloClip = new HoloClip();
         itemIronChunk = new IronChunk();
         itemSparkStarter = new SparkStarter();
         itemStarter = new Starter();
-        blockCBuilderBot = new CBuilderBot(Material.iron);
-        blockCEleBot = new CEleBot(Material.iron);
 
         GameRegistry.registerBlock(blockBotSide,"BotSide");
         GameRegistry.registerBlock(blockBotStation,"BotStation");
@@ -57,7 +49,5 @@ public class BotBlocks {
         GameRegistry.registerItem(itemIronChunk,"IronChunk");
         GameRegistry.registerItem(itemSparkStarter,"SparkStarter");
         GameRegistry.registerItem(itemStarter,"Starter");
-        GameRegistry.registerBlock(blockCBuilderBot,"CompactBuilderBot");
-        GameRegistry.registerBlock(blockCEleBot,"CompactEleBot");
     }
 }
