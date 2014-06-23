@@ -7,8 +7,8 @@ import net.minecraft.world.World;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class Entity extends EntityCreature implements IAnimals {
-    public Entity(World world){
+public class EntityThing extends EntityCreature implements IAnimals {
+    public EntityThing(World world){
         super(world);
         //initial variables
         setHealth(100);
