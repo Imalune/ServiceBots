@@ -1,0 +1,16 @@
+[
+{
+  "modid": "servicebots",
+  "name": "ServiceBots",
+  "description": "Service Bots for helpful companionship.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Imalune","Minalien","Hanse00"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,14 @@
+tile.BotStation.name=Bot Station
+item.BotSteel.name=BotSteel
+item.HoloClip.name=HoloClip
+item.Console.name=Console
+item.IronChunk.name=Iron Chunk
+tile.BotSide.name=Bot Side
+tile.FaceConsole.name=Face Console
+item.CompactorChip.name=Compactor Chip
+tile.EZMover.name=E-Z Mover
+item.Compactor.name=Compactor
+item.Starter.name=Starter
+item.SparkStarter.name=Spark Starter
+tile.ChargeBlock.name=Charge Block
+tile.BotSteelGenerator.name=BotSteel Generator
