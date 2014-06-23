@@ -1,15 +1,14 @@
 package servicebots.block;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import servicebots.ServiceBots;
 
 /**
  * Created by Imalune on 6/22/2014.
  */
 public class BotSteel extends Item {
     BotSteel(){
-    setCreativeTab(CreativeTabs.tabTools);
-    //Set this later to its own Creative Tab
+    setCreativeTab(ServiceBots.cTab);
     setUnlocalizedName("BotSteel");
     //No hardness, resistance, etc for items.
     //setTextureName()

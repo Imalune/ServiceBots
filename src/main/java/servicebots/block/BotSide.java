@@ -2,7 +2,7 @@ package servicebots.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import servicebots.ServiceBots;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -10,7 +10,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class BotSide extends Block{
     BotSide(Material material){
         super(material);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(ServiceBots.cTab);
         //Change later
         setBlockName("BotSide");
         //setBlockTextureName();

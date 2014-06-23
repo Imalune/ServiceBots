@@ -2,7 +2,7 @@ package servicebots.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import servicebots.ServiceBots;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -13,7 +13,7 @@ public class CBuilderBot extends Block {
         setResistance(4);
         setHardness(3);
         setHarvestLevel("pickaxe",0);
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(ServiceBots.cTab);
         setBlockName("CompactBuilderBot");
         //setBlockTextureName;
     }

@@ -12,3 +12,6 @@ item.Starter.name=Starter
 item.SparkStarter.name=Spark Starter
 tile.ChargeBlock.name=Charge Block
 tile.BotSteelGenerator.name=BotSteel Generator
+itemGroup.ServiceBots.name=ServiceBots
+tile.CEleBot.name=Compact Ele-Bot
+tile.CBuilderBot.name=Compact BuilderBot

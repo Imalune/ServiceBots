@@ -3,18 +3,20 @@ package servicebots;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import servicebots.block.BotBlocks;
-import sun.org.mozilla.javascript.internal.ast.Block;
+import servicebots.creativetab.CreativeTab;
 
 /**
  * Created by Imalune on 6/22/2014.
  */
-@Mod(modid = ServiceBotsClass.MODID, version = "${version}")
-public class ServiceBotsClass {
+@Mod(modid = ServiceBots.MODID, version = "0.0.1")
+public class ServiceBots {
     public static final String MODID = "ServiceBots";
+    public static final CreativeTabs cTab = new CreativeTab();
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)

@@ -1,9 +1,7 @@
 package servicebots.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import servicebots.ServiceBots;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -11,7 +9,7 @@ import net.minecraft.item.Item;
 public class Compactor extends Item {
     Compactor(){
         setUnlocalizedName("Compactor");
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(ServiceBots.cTab);
         //setTextureName();
     }
 }

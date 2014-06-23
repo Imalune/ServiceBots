@@ -1,7 +1,7 @@
 package servicebots.block;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import servicebots.ServiceBots;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 public class CompactorChip extends Item {
     CompactorChip(){
         setUnlocalizedName("CompactorChip");
-        setCreativeTab(CreativeTabs.tabTools);
+        setCreativeTab(ServiceBots.cTab);
         //setTextureName();
     }
 }
