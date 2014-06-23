@@ -1,7 +1,9 @@
 package servicebots;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -18,7 +20,13 @@ public class ServiceBots {
     public static final String MODID = "ServiceBots";
     public static final CreativeTabs cTab = new CreativeTab();
     public static ProxyCommon proxy;
+    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.ProxyClient");
 
+    @Mod.EventHandler
+    public void ini(FMLPreInitializationEvent nevent)
+    (
+            proxy.onModPreInit(nevent)
+            )
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
