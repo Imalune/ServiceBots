@@ -25,8 +25,8 @@ public class ServiceBots {
     public static ProxyCommon proxy;
 
     @Mod.EventHandler
-    public void ini(FMLPreInitializationEvent nevent);
-    (
+    public void ini(FMLPreInitializationEvent nevent)
+    {
             proxy.onModPreInit(nevent);
         }
     @Mod.EventHandler
