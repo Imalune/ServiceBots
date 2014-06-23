@@ -9,21 +9,14 @@ import servicebots.entities.*;
  */
 public class BotBlocks {
     public static BotSide blockBotSide;
-    public static BotStation blockBotStation;
     public static BotSteel itemBotSteel;
-    public static BotSteelGenerator blockBotSteelGenerator;
-    public static ChargeBlock blockChargeBlock;
-    public static Compactor itemCompactor;
     public static CompactorChip itemCompactorChip;
     public static Console itemConsole;
-    public static EZBotMover blockEZBotMover;
     public static FaceConsole blockFaceConsole;
     public static HoloClip itemHoloClip;
     public static IronChunk itemIronChunk;
     public static SparkStarter itemSparkStarter;
     public static Starter itemStarter;
-    public static CBuilderBot blockCBuilderBot;
-    public static CEleBot blockCEleBot;
 
     public static void init(){
                 blockFaceConsole = new FaceConsole(Material.iron);
@@ -36,14 +29,9 @@ public class BotBlocks {
         itemStarter = new Starter();
 
         GameRegistry.registerBlock(blockBotSide,"BotSide");
-        GameRegistry.registerBlock(blockBotStation,"BotStation");
         GameRegistry.registerItem(itemBotSteel,"BotSteel");
-        GameRegistry.registerBlock(blockBotSteelGenerator,"BotSteelGenerator");
-        GameRegistry.registerBlock(blockChargeBlock,"ChargeBlock");
-        GameRegistry.registerItem(itemCompactor,"Compactor");
         GameRegistry.registerItem(itemCompactorChip,"CompactorChip");
         GameRegistry.registerItem(itemConsole,"Console");
-        GameRegistry.registerBlock(blockEZBotMover,"EZBotMover");
         GameRegistry.registerBlock(blockFaceConsole,"FaceConsole");
         GameRegistry.registerItem(itemHoloClip,"HoloClip");
         GameRegistry.registerItem(itemIronChunk,"IronChunk");
