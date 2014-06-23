@@ -15,7 +15,7 @@ public class CProxy extends ProxyCommon{
     @Override
     public void onModPreInit(FMLPreInitializationEvent evt){
             super.onModPreInit(evt);
-            RenderingRegistry.registerEntityRenderingHandler(EntityThing.class, new RenderBiped(new ModelBiped(0.5f)));
+        RenderingRegistry.registerEntityRenderingHandler(EntityThing.class, new RenderBiped(new ModelBiped(), 0.5f));
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){
