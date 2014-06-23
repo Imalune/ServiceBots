@@ -9,7 +9,7 @@ import net.minecraft.block.material.Material;
 public class BotBlocks {
     public static BotSide blockBotSide;
     public static BotStation blockBotStation;
-    public static BotSteel itemBlockSteel;
+    public static BotSteel itemBotSteel;
     public static BotSteelGenerator blockBotSteelGenerator;
     public static ChargeBlock blockChargeBlock;
     public static Compactor itemCompactor;
@@ -32,7 +32,7 @@ public class BotBlocks {
 
         GameRegistry.registerBlock(blockBotSide,"BotSide");
         GameRegistry.registerBlock(blockBotStation,"BotStation");
-        GameRegistry.registerItem(itemBlockSteel,"BotSteel");
+        GameRegistry.registerItem(itemBotSteel,"BotSteel");
         GameRegistry.registerBlock(blockBotSteelGenerator,"BotSteelGenerator");
         GameRegistry.registerBlock(blockChargeBlock,"ChargeBlock");
         GameRegistry.registerItem(itemCompactor,"Compactor");
