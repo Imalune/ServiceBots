@@ -32,6 +32,7 @@ public class ServiceBotsClass {
                 "SPS","TGT","TTT",'S',BotBlocks.itemStarter,'P',BotBlocks.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemCompactor),
                 "S S","CIC","TTT",'S',BotBlocks.itemStarter,'C',Blocks.cobblestone,'I',BotBlocks.itemIronChunk,'T',Blocks.stone);
-
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemCompactorChip),
+                "B B"," H ","B B",'B',BotBlocks.itemBlockSteel,'H',BotBlocks.itemHoloClip);
     }
 }
