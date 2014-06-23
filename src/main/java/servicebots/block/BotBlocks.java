@@ -19,7 +19,8 @@ public class BotBlocks {
     public static Starter itemStarter;
 
     public static void init(){
-                blockFaceConsole = new FaceConsole(Material.iron);
+        blockFaceConsole = new FaceConsole(Material.iron);
+        blockBotSide = new BotSide(Material.iron);
         itemConsole = new Console();
         itemBotSteel = new BotSteel();
         itemCompactorChip = new CompactorChip();
