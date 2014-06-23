@@ -19,7 +19,7 @@ import servicebots.creativetab.CreativeTab;
 public class ServiceBots {
     public static final String MODID = "ServiceBots";
     public static final CreativeTabs cTab = new CreativeTab();
-    @Mod.Instance(ServiceBots.MOD_ID);
+    @Mod.Instance(ServiceBots.MODID);
     public static ServiceBots instance;
     @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.CProxy");
     public static ProxyCommon proxy;
