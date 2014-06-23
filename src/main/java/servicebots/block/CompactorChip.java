@@ -4,12 +4,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
- * Created by Imalune on 6/22/2014.
+ * Created by Imalune on 6/23/2014.
  */
-public class HoloClip extends Item {
-    HoloClip() {
+public class CompactorChip extends Item {
+    CompactorChip(){
+        setUnlocalizedName("CompactorChip");
         setCreativeTab(CreativeTabs.tabTools);
-        setUnlocalizedName("HoloClip");
         //setTextureName();
     }
 }

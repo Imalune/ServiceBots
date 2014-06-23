@@ -4,12 +4,12 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
- * Created by Imalune on 6/22/2014.
+ * Created by Imalune on 6/23/2014.
  */
-public class IronChunk extends Item {
-    IronChunk() {
-        setUnlocalizedName("IronChunk");
-        //setTextureName();
+public class SparkStarter extends Item {
+    SparkStarter(){
         setCreativeTab(CreativeTabs.tabTools);
+        setUnlocalizedName("SparkStarter");
+        //setTextureName();
     }
 }
