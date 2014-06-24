@@ -15,4 +15,4 @@ tile.BotSteelGenerator.name=BotSteel Generator
 itemGroup.ServiceBots.name=ServiceBots
 tile.CEleBot.name=Compact Ele-Bot
 tile.CBuilderBot.name=Compact BuilderBot
-entity.EleBot.name=Ele-Bot
+entity.Elebot.name=Ele-Bot

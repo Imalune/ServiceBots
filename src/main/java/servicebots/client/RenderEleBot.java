@@ -8,7 +8,7 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class RenderEleBot extends RenderBiped{
+//public class RenderEleBot extends RenderBiped{
     //public final ModelBiped botModel;
     //public RenderEleBot(ModelBiped model) {
         //super(model, 0.5f);
@@ -30,4 +30,4 @@ public class RenderEleBot extends RenderBiped{
         //}
        // return super.getEntityTexture(par1Entity);
    // }
-}
+//}

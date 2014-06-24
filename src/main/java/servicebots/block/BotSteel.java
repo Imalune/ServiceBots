@@ -10,8 +10,6 @@ public class BotSteel extends Item {
     BotSteel(){
     setCreativeTab(ServiceBots.cTab);
     setUnlocalizedName("BotSteel");
-    //No hardness, resistance, etc for items.
-    //setTextureName()
-    //No Texture yet.
+    setTextureName("items:botsteel");
         }
       }
