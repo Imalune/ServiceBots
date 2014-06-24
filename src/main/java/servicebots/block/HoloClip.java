@@ -10,6 +10,6 @@ public class HoloClip extends Item {
     HoloClip() {
         setCreativeTab(ServiceBots.cTab);
         setUnlocalizedName("HoloClip");
-        //setTextureName();
+        setTextureName("ServiceBots:holoclip");
     }
 }

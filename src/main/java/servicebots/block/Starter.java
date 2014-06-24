@@ -10,6 +10,6 @@ public class Starter extends Item {
     Starter(){
         setUnlocalizedName("Starter");
         setCreativeTab(ServiceBots.cTab);
-        //setTextureName();
+        setTextureName("ServiceBots:Starter");
     }
 }

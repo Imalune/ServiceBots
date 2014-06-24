@@ -11,9 +11,8 @@ public class BotSide extends Block{
     BotSide(Material material){
         super(material);
         setCreativeTab(ServiceBots.cTab);
-        //Change later
         setBlockName("BotSide");
-        //setBlockTextureName();
+        setBlockTextureName("ServiceBots:botside");
         setHardness(3);
         setResistance(4);
         setHarvestLevel("pickaxe",0);

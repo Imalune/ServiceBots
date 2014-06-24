@@ -9,7 +9,7 @@ import servicebots.ServiceBots;
 public class Console extends Item {
     Console(){
         setUnlocalizedName("Console");
-       // setTextureName();
+        setTextureName("ServiceBots:console");
         setCreativeTab(ServiceBots.cTab);
     }
     }

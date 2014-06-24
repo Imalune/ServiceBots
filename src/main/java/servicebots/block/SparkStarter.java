@@ -10,6 +10,6 @@ public class SparkStarter extends Item {
     SparkStarter(){
         setCreativeTab(ServiceBots.cTab);
         setUnlocalizedName("SparkStarter");
-        //setTextureName();
+        setTextureName("ServiceBots:sparkstarter");
     }
 }
