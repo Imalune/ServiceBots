@@ -10,6 +10,6 @@ public class BotSteel extends Item {
     BotSteel(){
     setCreativeTab(ServiceBots.cTab);
     setUnlocalizedName("BotSteel");
-    setTextureName("items:botsteel");
+    setTextureName("ServiceBots:botsteel");
         }
       }

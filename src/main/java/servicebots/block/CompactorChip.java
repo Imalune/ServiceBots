@@ -10,6 +10,6 @@ public class CompactorChip extends Item {
     CompactorChip(){
         setUnlocalizedName("CompactorChip");
         setCreativeTab(ServiceBots.cTab);
-        //setTextureName();
+        setTextureName("ServiceBots:compactorchip");
     }
 }
