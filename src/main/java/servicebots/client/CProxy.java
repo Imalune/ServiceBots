@@ -6,7 +6,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import servicebots.ProxyCommon;
-import servicebots.entities.EntityThing;
+import servicebots.entities.EntityEleBot;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -15,7 +15,7 @@ public class CProxy extends ProxyCommon{
     @Override
     public void onModPreInit(FMLPreInitializationEvent evt){
             super.onModPreInit(evt);
-        RenderingRegistry.registerEntityRenderingHandler(EntityThing.class, new RenderBiped(new ModelBiped(), 0.5f));
+        RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderBiped(new ModelBiped(), 0.5f));
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){

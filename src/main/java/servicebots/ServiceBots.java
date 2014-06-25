@@ -31,10 +31,12 @@ public class ServiceBots {
             proxy.onModPreInit(nevent);
         }
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
         BotBlocks.init();
         BotItems.init();
+        registerCraftingRecipes();
+    }
+    private void registerCraftingRecipes(){
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSide),
                 "BBB", "ICI", "BBB", 'B', BotItems.itemBotSteel, 'I', BotItems.itemIronChunk, 'C', BotItems.itemConsole);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotStation),
