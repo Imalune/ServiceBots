@@ -1,4 +1,4 @@
-package servicebots.block;
+package servicebots.items;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import servicebots.items.*;

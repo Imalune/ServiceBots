@@ -39,10 +39,10 @@ public class BotStation extends Block{
         if (side == 4){
             return botstationface;
         }
-        else if (side == 2);
-        {
+        else if(side == 2){
             return botstationtop;
-        }else{
+        }
+        else{
             return botstationside;
         }
     }

@@ -10,7 +10,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import servicebots.block.BotBlocks;
-import servicebots.block.BotItems;
+import servicebots.items.BotItems;
 import servicebots.creativetab.CreativeTab;
 
 /**
