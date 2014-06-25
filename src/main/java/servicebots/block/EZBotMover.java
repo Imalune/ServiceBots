@@ -1,6 +1,7 @@
 package servicebots.block;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
@@ -10,7 +11,7 @@ import servicebots.tileentities.TileEntityEZBotMover;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class EZBotMover extends Block {
+public class EZBotMover extends BlockContainer {
     EZBotMover(Material material){
         super(material);
         //setBlockTextureName();
