@@ -34,6 +34,7 @@ public class ServiceBots {
     public void init(FMLInitializationEvent event)
     {
         BotBlocks.init();
+        BotItems.init();
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSide),
                 "BBB","ICI","BBB",'B', BotItems.itemBotSteel,'I',BotItems.itemIronChunk,'C',BotItems.itemConsole);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotStation),
@@ -48,10 +49,6 @@ public class ServiceBots {
                 "HHH"," C ","HHH",'H',BotItems.itemHoloClip,'C',BotItems.itemCompactorChip);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockFaceConsole),
                 "BBB","BHB","BBB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip);
-    }
-    @Mod.EventHandler
-    public void ini(FMLInitializationEvent event) {
-        BotItems.init();
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemCompactorChip),
                 "B B", " H ", "B B", 'B', BotItems.itemBotSteel, 'H', BotItems.itemHoloClip);
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemCompactor),
@@ -65,4 +62,5 @@ public class ServiceBots {
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemStarter),
                 "I I","BBB","SSS",'I',BotItems.itemIronChunk,'B',BotItems.itemBotSteel,'S',Blocks.stone);
     }
+
 }
