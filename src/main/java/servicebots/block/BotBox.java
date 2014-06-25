@@ -6,6 +6,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
 import servicebots.tileentities.TileEntityBotBox;
+import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
  * Created by Imalune on 6/23/2014.
