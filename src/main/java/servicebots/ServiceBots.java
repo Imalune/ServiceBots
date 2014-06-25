@@ -36,18 +36,16 @@ public class ServiceBots {
         BotBlocks.init();
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSide),
                 "BBB","ICI","BBB",'B', BotItems.itemBotSteel,'I',BotItems.itemIronChunk,'C',BotItems.itemConsole);
-        //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotStation),
-        //       "B B"," C ","   ",'B',BotItems.itemBotSteel,'C',Blocks.crafting_table);
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotStation),
+               "B B"," C ","   ",'B',BotItems.itemBotSteel,'C',Blocks.crafting_table);
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemBotSteel),
                 "DDD","DID","DDD",'D', Blocks.dirt,'I',BotItems.itemIronChunk);
-       // GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSteelGenerator),
-         //       "BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
-        //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockChargeBlock),
-         //       "SPS","TGT","TTT",'S',BotItems.itemStarter,'P',BotItems.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
-        //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemCompactor),
-           //     "S S","CIC","TTT",'S',BotItems.itemStarter,'C',Blocks.cobblestone,'I',BotItems.itemIronChunk,'T',Blocks.stone);
-        //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockEZBotMover),
-         //       "HHH"," C ","HHH",'H',BotBlocks.itemHoloClip,'C',BotBlocks.itemCompactorChip);
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSteelGenerator),
+               "BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockChargeBlock),
+                "SPS","TGT","TTT",'S',BotItems.itemStarter,'P',BotItems.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockEZBotMover),
+                "HHH"," C ","HHH",'H',BotItems.itemHoloClip,'C',BotItems.itemCompactorChip);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockFaceConsole),
                 "BBB","BHB","BBB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip);
     }
@@ -56,6 +54,8 @@ public class ServiceBots {
         BotItems.init();
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemCompactorChip),
                 "B B", " H ", "B B", 'B', BotItems.itemBotSteel, 'H', BotItems.itemHoloClip);
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemCompactor),
+                "S S","CIC","TTT",'S',BotItems.itemStarter,'C',Blocks.cobblestone,'I',BotItems.itemIronChunk,'T',Blocks.stone);
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemConsole),
                 "GGG", "GHG", "GGG", 'G', Blocks.glass, 'H', BotItems.itemHoloClip);
         GameRegistry.addShapelessRecipe(new ItemStack(BotItems.itemHoloClip),new ItemStack(Blocks.glass,2),new ItemStack(Blocks.stone,3));

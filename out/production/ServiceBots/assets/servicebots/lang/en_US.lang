@@ -16,3 +16,5 @@ itemGroup.ServiceBots=ServiceBots
 tile.CEleBot.name=Compact Ele-Bot
 tile.CBuilderBot.name=Compact BuilderBot
 entity.Elebot.name=Ele-Bot
+tile.PerimeterMap.name=Perimeter Map
+tile.BotBox.name=BotBox

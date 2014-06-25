@@ -8,6 +8,7 @@ import servicebots.items.*;
  */
 public class BotItems {
     public static BotSteel itemBotSteel;
+    public static Compactor itemCompactor;
     public static CompactorChip itemCompactorChip;
     public static Console itemConsole;
     public static HoloClip itemHoloClip;
@@ -18,6 +19,7 @@ public class BotItems {
     public static void init(){
         itemConsole = new Console();
         itemBotSteel = new BotSteel();
+        itemCompactor = new Compactor();
         itemCompactorChip = new CompactorChip();
         itemHoloClip = new HoloClip();
         itemIronChunk = new IronChunk();
@@ -25,6 +27,7 @@ public class BotItems {
         itemStarter = new Starter();
 
         GameRegistry.registerItem(itemBotSteel,"BotSteel");
+        GameRegistry.registerItem(itemCompactor,"Compactor");
         GameRegistry.registerItem(itemCompactorChip,"CompactorChip");
         GameRegistry.registerItem(itemConsole,"Console");
         GameRegistry.registerItem(itemHoloClip,"HoloClip");
