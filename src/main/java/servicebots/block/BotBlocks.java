@@ -12,6 +12,8 @@ public class BotBlocks {
     public static BotStation blockBotStation;
     public static BotSteelGenerator blockBotSteelGenerator;
     public static ChargeBlock blockChargeBlock;
+    public static CompactBuilderBot blockCompactBuilderBot;
+    public static CompactEleBot blockCompactEleBot;
     public static EZBotMover blockEZBotMover;
     public static FaceConsole blockFaceConsole;
     public static PerimeterMap blockPerimeterMap;
@@ -22,6 +24,8 @@ public class BotBlocks {
         blockBotStation = new BotStation(Material.iron);
         blockBotSteelGenerator = new BotSteelGenerator(Material.iron);
         blockChargeBlock = new ChargeBlock(Material.iron);
+        blockCompactBuilderBot = new CompactBuilderBot(Material.cake);
+        blockCompactEleBot = new CompactEleBot(Material.cake);
         blockEZBotMover = new EZBotMover(Material.iron);
         blockFaceConsole = new FaceConsole(Material.iron);
         blockPerimeterMap = new PerimeterMap(Material.cake);
@@ -31,6 +35,8 @@ public class BotBlocks {
         GameRegistry.registerBlock(blockBotStation,"BotStation");
         GameRegistry.registerBlock(blockBotSteelGenerator,"BotSteelGenerator");
         GameRegistry.registerBlock(blockChargeBlock,"ChargeBlock");
+        GameRegistry.registerBlock(blockCompactBuilderBot,"CompactBuilderBot");
+        GameRegistry.registerBlock(blockCompactEleBot,"CompactEleBot");
         GameRegistry.registerBlock(blockEZBotMover,"EZBotMover");
         GameRegistry.registerBlock(blockFaceConsole,"FaceConsole");
         GameRegistry.registerBlock(blockPerimeterMap,"PerimeterMap");

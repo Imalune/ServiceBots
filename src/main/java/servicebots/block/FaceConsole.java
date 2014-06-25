@@ -15,7 +15,9 @@ public class FaceConsole extends Block {
     @SideOnly(Side.CLIENT)
             private IIcon botface;
     @SideOnly(Side.CLIENT)
-            private IIcon botside;
+            private IIcon bbotside;
+    @SideOnly(Side.CLIENT)
+            private IIcon botback;
     FaceConsole(Material material){
         super(material);
         setBlockName("FaceConsole");
@@ -29,7 +31,8 @@ public class FaceConsole extends Block {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons (IIconRegister register){
         botface=register.registerIcon("ServiceBots:botface");
-        botside=register.registerIcon("ServiceBots:botside");
+        bbotside=register.registerIcon("ServiceBots:bbotside");
+        botback=register.registerIcon("ServiceBots:botback");
     }
     @Override
     @SideOnly(Side.CLIENT)
@@ -37,8 +40,11 @@ public class FaceConsole extends Block {
         if (side == 4){
             return botface;
         }
+        else if (side == 5){
+            return botback;
+        }
         else{
-            return botside;
+            return bbotside;
         }
     }
 }

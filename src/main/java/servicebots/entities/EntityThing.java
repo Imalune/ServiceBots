@@ -10,7 +10,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/23/2014.
  */
 public class EntityThing extends EntityCreature implements IAnimals {
-    public final ResourceLocation texture = new ResourceLocation(ServiceBots.MODID, "textures/entities/Practice.png");
+    public final ResourceLocation texture = new ResourceLocation(ServiceBots.MODID, "textures/entities/elebot.png");
     public EntityThing(World world){
         super(world);
         //initial variables

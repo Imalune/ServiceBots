@@ -18,3 +18,5 @@ tile.CBuilderBot.name=Compact BuilderBot
 entity.Elebot.name=Ele-Bot
 tile.PerimeterMap.name=Perimeter Map
 tile.BotBox.name=BotBox
+tile.CompactBuilderBot.name=Compact BuilderBot
+tile.CompactEleBot.name=Compact Ele-Bot

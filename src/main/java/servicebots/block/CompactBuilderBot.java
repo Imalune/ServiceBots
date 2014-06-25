@@ -9,35 +9,37 @@ import net.minecraft.util.IIcon;
 import servicebots.ServiceBots;
 
 /**
- * Created by Imalune on 6/23/2014.
+ * Created by Imalune on 6/24/2014.
  */
-public class BotSteelGenerator extends Block {
+public class CompactBuilderBot extends Block {
     @SideOnly(Side.CLIENT)
-    private IIcon botgenface;
+    private IIcon builderbotface;
     @SideOnly(Side.CLIENT)
     private IIcon bbotside;
+    @SideOnly(Side.CLIENT)
+    private IIcon botback;
 
-    BotSteelGenerator(Material material) {
+    CompactBuilderBot(Material material) {
         super(material);
-        setBlockName("BotSteelGenerator");
-        setResistance(4);
-        setHardness(3);
-        setHarvestLevel("pickaxe", 0);
+        setBlockName("CompactBuilderBot");
         setCreativeTab(ServiceBots.cTab);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        botgenface = register.registerIcon("ServiceBots:botsteelgen");
+        builderbotface = register.registerIcon("ServiceBots:botface");
         bbotside = register.registerIcon("ServiceBots:bbotside");
+        botback = register.registerIcon("ServiceBots:botback");
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
         if (side == 4) {
-            return botgenface;
+            return builderbotface;
+        } else if (side == 5) {
+            return botback;
         } else {
             return bbotside;
         }

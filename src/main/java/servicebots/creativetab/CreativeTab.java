@@ -17,6 +17,6 @@ public class CreativeTab extends CreativeTabs {
     @Override
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem(){
-        return Item.getItemFromBlock(BotBlocks.blockFaceConsole);
+        return Item.getItemFromBlock(BotBlocks.blockCompactEleBot);
     }
 }
