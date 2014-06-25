@@ -22,7 +22,7 @@ public class ServiceBots {
     public static final CreativeTabs cTab = new CreativeTab();
     @Mod.Instance(ServiceBots.MODID)
     public static ServiceBots instance;
-    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.CProxy")
+    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.ProxyClient")
     public static ProxyCommon proxy;
 
     @Mod.EventHandler

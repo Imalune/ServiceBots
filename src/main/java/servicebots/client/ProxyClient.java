@@ -11,7 +11,7 @@ import servicebots.entities.EntityEleBot;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class CProxy extends ProxyCommon{
+public class ProxyClient extends ProxyCommon{
     @Override
     public void onModPreInit(FMLPreInitializationEvent evt){
             super.onModPreInit(evt);

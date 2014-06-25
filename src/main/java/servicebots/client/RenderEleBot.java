@@ -1,17 +1,21 @@
 package servicebots.client;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.ResourceLocation;
+import servicebots.ServiceBots;
 import servicebots.entities.EntityEleBot;
 
 
 /**
  * Created by Imalune on 6/23/2014.
  */
+@SideOnly(Side.CLIENT)
 public class RenderEleBot extends RenderBiped{
+    public final ResourceLocation texture = new ResourceLocation(ServiceBots.MODID, "textures/entities/elebot.png");
     public final ModelBiped botModel;
     public RenderEleBot(ModelBiped model)
     {
@@ -20,20 +24,8 @@ public class RenderEleBot extends RenderBiped{
     }
 
     @Override
-    protected ResourceLocation getEntityTexture(EntityLiving par1EntityLiving)
-    {
-        if(par1EntityLiving instanceof EntityEleBot){
-            return ((EntityEleBot) par1EntityLiving).texture;
-        }
-        return super.getEntityTexture(par1EntityLiving);
-   }
-
-    @Override
     protected ResourceLocation getEntityTexture(Entity par1Entity)
     {
-        if(par1Entity instanceof EntityEleBot){
-            return ((EntityEleBot) par1Entity).texture;
-        }
-        return super.getEntityTexture(par1Entity);
+        return this.texture;
    }
 }
