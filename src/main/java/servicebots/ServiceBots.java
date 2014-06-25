@@ -18,11 +18,11 @@ import servicebots.creativetab.CreativeTab;
  */
 @Mod(modid = ServiceBots.MODID, version = "0.0.1")
 public class ServiceBots {
-    public static final String MODID = "ServiceBots";
+    public static final String MODID = "servicebots";
     public static final CreativeTabs cTab = new CreativeTab();
     @Mod.Instance(ServiceBots.MODID)
     public static ServiceBots instance;
-    @SidedProxy(serverSide="ServiceBots.ProxyCommon",clientSide = "servicebots.client.CProxy")
+    @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.CProxy")
     public static ProxyCommon proxy;
 
     @Mod.EventHandler

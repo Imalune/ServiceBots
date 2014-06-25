@@ -10,7 +10,7 @@ import servicebots.entities.EntityEleBot;
  */
 public class ProxyCommon {
     public void onModPreInit(FMLPreInitializationEvent evt){
-        EntityRegistry.registerGlobalEntityID(EntityEleBot.class, "Elebot", EntityRegistry.findGlobalUniqueEntityId() );
+        EntityRegistry.registerGlobalEntityID(EntityEleBot.class, "Elebot", EntityRegistry.findGlobalUniqueEntityId(), 0xffffff, 0xcccccc);
     }
     public void onModInit(FMLInitializationEvent evt){
      }
