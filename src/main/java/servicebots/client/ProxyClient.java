@@ -15,7 +15,7 @@ public class ProxyClient extends ProxyCommon{
     @Override
     public void onModPreInit(FMLPreInitializationEvent evt){
             super.onModPreInit(evt);
-        RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderBiped(new ModelBiped(), 0.5f));
+        RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderEleBot(new ModelBiped()));
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){
