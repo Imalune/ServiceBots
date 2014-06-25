@@ -6,6 +6,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import servicebots.ProxyCommon;
+import servicebots.entities.EntityBuilderBot;
 import servicebots.entities.EntityEleBot;
 
 /**
@@ -16,6 +17,7 @@ public class ProxyClient extends ProxyCommon{
     public void onModPreInit(FMLPreInitializationEvent evt){
             super.onModPreInit(evt);
         RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderEleBot(new ModelBiped()));
+        RenderingRegistry.registerEntityRenderingHandler(EntityBuilderBot.class, new RenderBuilderBot(new ModelBiped()));
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){
