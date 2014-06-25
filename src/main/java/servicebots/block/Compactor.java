@@ -1,4 +1,4 @@
-package servicebots.entities;
+package servicebots.block;
 
 import net.minecraft.item.Item;
 import servicebots.ServiceBots;

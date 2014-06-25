@@ -9,7 +9,7 @@
   "updateUrl": "",
   "authorList": ["Imalune","Minalien","Hanse00",Mr_Okushama],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/servicebots/textures/SBIcon.png",
   "screenshots": [],
   "dependencies": []
 }
