@@ -1,7 +1,6 @@
 package servicebots.items;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import servicebots.items.*;
 
 /**
  * Created by Imalune on 6/22/2014.
@@ -17,10 +16,10 @@ public class BotItems {
     public static Starter itemStarter;
 
     public static void init(){
-        itemConsole = new Console();
         itemBotSteel = new BotSteel();
         itemCompactor = new Compactor();
         itemCompactorChip = new CompactorChip();
+        itemConsole = new Console();
         itemHoloClip = new HoloClip();
         itemIronChunk = new IronChunk();
         itemSparkStarter = new SparkStarter();

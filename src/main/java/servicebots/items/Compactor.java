@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/23/2014.
  */
 public class Compactor extends Item {
-    public Compactor(){
+    Compactor(){
         setUnlocalizedName("Compactor");
         setCreativeTab(ServiceBots.cTab);
         setTextureName("ServiceBots:compactor");

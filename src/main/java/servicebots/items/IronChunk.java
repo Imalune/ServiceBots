@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/22/2014.
  */
 public class IronChunk extends Item {
-    public IronChunk() {
+    IronChunk() {
         setUnlocalizedName("IronChunk");
         setTextureName("ServiceBots:ironchunk");
         setCreativeTab(ServiceBots.cTab);

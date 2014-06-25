@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/23/2014.
  */
 public class Starter extends Item {
-    public Starter(){
+    Starter(){
         setUnlocalizedName("Starter");
         setCreativeTab(ServiceBots.cTab);
         setTextureName("ServiceBots:Starter");

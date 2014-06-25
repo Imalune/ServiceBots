@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/22/2014.
  */
 public class BotSteel extends Item {
-    public BotSteel(){
+    BotSteel(){
     setCreativeTab(ServiceBots.cTab);
     setUnlocalizedName("BotSteel");
     setTextureName("ServiceBots:botsteel");
