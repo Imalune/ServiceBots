@@ -15,9 +15,9 @@ public class CompactBuilderBot extends Block {
     @SideOnly(Side.CLIENT)
     private IIcon builderbotface;
     @SideOnly(Side.CLIENT)
-    private IIcon bbotside;
+    private IIcon builderbotside;
     @SideOnly(Side.CLIENT)
-    private IIcon botback;
+    private IIcon builderbotback;
 
     CompactBuilderBot(Material material) {
         super(material);
@@ -28,9 +28,9 @@ public class CompactBuilderBot extends Block {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        builderbotface = register.registerIcon("ServiceBots:botface");
-        bbotside = register.registerIcon("ServiceBots:bbotside");
-        botback = register.registerIcon("ServiceBots:botback");
+        builderbotface = register.registerIcon("ServiceBots:builderbotface");
+        builderbotside = register.registerIcon("ServiceBots:builderbotside");
+        builderbotback = register.registerIcon("ServiceBots:builderbotback");
     }
 
     @Override
@@ -39,9 +39,9 @@ public class CompactBuilderBot extends Block {
         if (side == 4) {
             return builderbotface;
         } else if (side == 5) {
-            return botback;
+            return builderbotback;
         } else {
-            return bbotside;
+            return builderbotside;
         }
     }
 }

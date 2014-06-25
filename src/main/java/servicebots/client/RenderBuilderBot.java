@@ -13,7 +13,7 @@ import servicebots.ServiceBots;
  */
 @SideOnly(Side.CLIENT)
 public class RenderBuilderBot extends RenderBiped {
-    public final ResourceLocation texture = new ResourceLocation(ServiceBots.MODID, "textures/entities/elebot.png");
+    public final ResourceLocation texture = new ResourceLocation(ServiceBots.MODID, "textures/entities/builderbot.png");
     public final ModelBiped botModel;
     public RenderBuilderBot(ModelBiped model)
     {
