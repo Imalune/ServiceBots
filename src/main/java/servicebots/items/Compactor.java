@@ -1,4 +1,4 @@
-package servicebots.block;
+package servicebots.items;
 
 import net.minecraft.item.Item;
 import servicebots.ServiceBots;
@@ -10,6 +10,6 @@ public class Compactor extends Item {
     Compactor(){
         setUnlocalizedName("Compactor");
         setCreativeTab(ServiceBots.cTab);
-        //setTextureName();
+        setTextureName("ServiceBots:compactor");
     }
 }

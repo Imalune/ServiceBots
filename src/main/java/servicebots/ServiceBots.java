@@ -10,6 +10,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import servicebots.block.BotBlocks;
+import servicebots.block.BotItems;
 import servicebots.creativetab.CreativeTab;
 
 /**
@@ -34,30 +35,34 @@ public class ServiceBots {
     {
         BotBlocks.init();
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSide),
-                "BBB","ICI","BBB",'B', BotBlocks.itemBotSteel,'I',BotBlocks.itemIronChunk,'C',BotBlocks.itemConsole);
+                "BBB","ICI","BBB",'B', BotItems.itemBotSteel,'I',BotItems.itemIronChunk,'C',BotItems.itemConsole);
         //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotStation),
-        //       "B B"," C ","   ",'B',BotBlocks.itemBotSteel,'C',Blocks.crafting_table);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemBotSteel),
-                "DDD","DID","DDD",'D', Blocks.dirt,'I',BotBlocks.itemIronChunk);
+        //       "B B"," C ","   ",'B',BotItems.itemBotSteel,'C',Blocks.crafting_table);
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemBotSteel),
+                "DDD","DID","DDD",'D', Blocks.dirt,'I',BotItems.itemIronChunk);
        // GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSteelGenerator),
-         //       "BHB","SRS","BHB",'B',BotBlocks.itemBotSteel,'H',BotBlocks.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
+         //       "BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
         //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockChargeBlock),
-         //       "SPS","TGT","TTT",'S',BotBlocks.itemStarter,'P',BotBlocks.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
+         //       "SPS","TGT","TTT",'S',BotItems.itemStarter,'P',BotItems.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
         //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemCompactor),
-           //     "S S","CIC","TTT",'S',BotBlocks.itemStarter,'C',Blocks.cobblestone,'I',BotBlocks.itemIronChunk,'T',Blocks.stone);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemCompactorChip),
-                "B B"," H ","B B",'B',BotBlocks.itemBotSteel,'H',BotBlocks.itemHoloClip);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemConsole),
-                "GGG","GHG","GGG",'G',Blocks.glass,'H',BotBlocks.itemHoloClip);
+           //     "S S","CIC","TTT",'S',BotItems.itemStarter,'C',Blocks.cobblestone,'I',BotItems.itemIronChunk,'T',Blocks.stone);
         //GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockEZBotMover),
          //       "HHH"," C ","HHH",'H',BotBlocks.itemHoloClip,'C',BotBlocks.itemCompactorChip);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockFaceConsole),
-                "BBB","BHB","BBB",'B',BotBlocks.itemBotSteel,'H',BotBlocks.itemHoloClip);
-        GameRegistry.addShapelessRecipe(new ItemStack(BotBlocks.itemHoloClip),new ItemStack(Blocks.glass,2),new ItemStack(Blocks.stone,3));
-        GameRegistry.addShapelessRecipe(new ItemStack(BotBlocks.itemIronChunk,6),Items.iron_ingot);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemSparkStarter),
-                "S S","DID","TTT",'S',BotBlocks.itemStarter,'D',Blocks.dirt,'I',BotBlocks.itemIronChunk,'T',Blocks.stone);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.itemStarter),
-                "I I","BBB","SSS",'I',BotBlocks.itemIronChunk,'B',BotBlocks.itemBotSteel,'S',Blocks.stone);
+                "BBB","BHB","BBB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip);
+    }
+    @Mod.EventHandler
+    public void ini(FMLInitializationEvent event) {
+        BotItems.init();
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemCompactorChip),
+                "B B", " H ", "B B", 'B', BotItems.itemBotSteel, 'H', BotItems.itemHoloClip);
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemConsole),
+                "GGG", "GHG", "GGG", 'G', Blocks.glass, 'H', BotItems.itemHoloClip);
+        GameRegistry.addShapelessRecipe(new ItemStack(BotItems.itemHoloClip),new ItemStack(Blocks.glass,2),new ItemStack(Blocks.stone,3));
+        GameRegistry.addShapelessRecipe(new ItemStack(BotItems.itemIronChunk,6),Blocks.iron_ore);
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemSparkStarter),
+                "S S","DID","TTT",'S',BotItems.itemStarter,'D',Blocks.dirt,'I',BotItems.itemIronChunk,'T',Blocks.stone);
+        GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemStarter),
+                "I I","BBB","SSS",'I',BotItems.itemIronChunk,'B',BotItems.itemBotSteel,'S',Blocks.stone);
     }
 }

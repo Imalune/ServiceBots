@@ -1,4 +1,4 @@
-package servicebots.block;
+package servicebots.items;
 
 import net.minecraft.item.Item;
 import servicebots.ServiceBots;
@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/23/2014.
  */
 public class SparkStarter extends Item {
-    SparkStarter(){
+    public SparkStarter(){
         setCreativeTab(ServiceBots.cTab);
         setUnlocalizedName("SparkStarter");
         setTextureName("ServiceBots:sparkstarter");

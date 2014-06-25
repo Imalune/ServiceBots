@@ -1,4 +1,4 @@
-package servicebots.block;
+package servicebots.items;
 
 import net.minecraft.item.Item;
 import servicebots.ServiceBots;
@@ -7,7 +7,7 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/22/2014.
  */
 public class Console extends Item {
-    Console(){
+    public Console(){
         setUnlocalizedName("Console");
         setTextureName("ServiceBots:console");
         setCreativeTab(ServiceBots.cTab);
