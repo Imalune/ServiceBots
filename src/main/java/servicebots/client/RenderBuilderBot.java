@@ -1,11 +1,8 @@
 package servicebots.client;
 
-import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.AdvancedModelLoader;
@@ -18,7 +15,7 @@ import servicebots.ServiceBots;
  */
 @SideOnly(Side.CLIENT)
 public class RenderBuilderBot extends Render {
-    private static final IModelCustom Model =
+    private static final IModelCustom model =
             AdvancedModelLoader.loadModel(new ResourceLocation("servicebots:models/builderBot.obj"));
     private static final ResourceLocation texture =
             new ResourceLocation(ServiceBots.MODID,"textures/entities/builderbot.png");
@@ -28,9 +25,8 @@ public class RenderBuilderBot extends Render {
         GL11.glPushMatrix();
         GL11.glTranslatef(0f, .5f, .25f);
         GL11.glScalef(.45f, -.45f, -.45f);
-        TextureManager renderEngine = FMLClientHandler.instance().getClient().renderEngine;
-        renderEngine.bindTexture(texture);
-        Model.renderAll();
+        bindTexture(texture);
+        model.renderAll();
         GL11.glPopMatrix();
     }
     @Override

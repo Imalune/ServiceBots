@@ -1,13 +1,15 @@
 package servicebots.entities;
 
 import net.minecraft.entity.EntityCreature;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.IAnimals;
 import net.minecraft.world.World;
 
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class EntityBuilderBot extends EntityCreature implements IAnimals {
+public class EntityBuilderBot extends EntityLiving {
     public EntityBuilderBot(World world){
         super(world);
         //initial variables
