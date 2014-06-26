@@ -21,7 +21,7 @@ public class RenderBuilderBot extends RenderBiped {
     private static final IModelCustom Model =
             AdvancedModelLoader.loadModel(new ResourceLocation("servicebots:models/builderBot.obj"));
     private static final ResourceLocation texture =
-            new ResourceLocation("servicebots:entities/builderbot.png");
+            new ResourceLocation(ServiceBots.MODID,"textures/entities/builderbot.png");
 
     public void render(Entity par1Entity, float par2, float par3, float par4, float par5, float par6, float par7)
     {
@@ -33,10 +33,8 @@ public class RenderBuilderBot extends RenderBiped {
         Model.renderAll();
         GL11.glPopMatrix();
     }
-    public final ModelBiped botModel;
-    public RenderBuilderBot(ModelBiped model)
+    public RenderBuilderBot()
     {
-        super(model, 0.5f);
-        botModel = model;
+        super(Model,0.5f);
     }
 }
