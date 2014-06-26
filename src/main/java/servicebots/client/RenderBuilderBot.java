@@ -3,7 +3,8 @@ package servicebots.client;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.entity.RenderBiped;
+import net.minecraft.client.renderer.entity.Render;
+import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -16,13 +17,13 @@ import servicebots.ServiceBots;
  * Created by Imalune on 6/25/2014.
  */
 @SideOnly(Side.CLIENT)
-public class RenderBuilderBot extends RenderBiped {
+public class RenderBuilderBot extends Render {
     private static final IModelCustom Model =
             AdvancedModelLoader.loadModel(new ResourceLocation("servicebots:models/builderBot.obj"));
     private static final ResourceLocation texture =
             new ResourceLocation(ServiceBots.MODID,"textures/entities/builderbot.png");
-
-    public void render(Entity par1Entity, float par2, float par3, float par4, float par5, float par6, float par7)
+    @Override
+    public void doRender(Entity par1Entity, double par2, double par3, double par4, float par5, float par6)
     {
         GL11.glPushMatrix();
         GL11.glTranslatef(0f, .5f, .25f);
@@ -32,8 +33,9 @@ public class RenderBuilderBot extends RenderBiped {
         Model.renderAll();
         GL11.glPopMatrix();
     }
-    public RenderBuilderBot()
+    @Override
+    protected ResourceLocation getEntityTexture(Entity par1Entity)
     {
-        super(Model,0.5f);
+        return texture;
     }
 }
