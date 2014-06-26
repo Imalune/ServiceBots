@@ -1,14 +1,16 @@
 package servicebots.block;
 
-import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 import servicebots.ServiceBots;
+import servicebots.tileentities.TileEntityChargeBlock;
 
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class ChargeBlock extends Block {
+public class ChargeBlock extends BlockContainer {
     ChargeBlock(Material material){
         super(material);
         setBlockName("ChargeBlock");
@@ -16,6 +18,9 @@ public class ChargeBlock extends Block {
         setHarvestLevel("pickaxe",0);
         setResistance(4);
         setHardness(3);
-        //setBlockTextureName();
+    }
+    @Override
+    public TileEntity createNewTileEntity(World world, int stuff){
+        return new TileEntityChargeBlock();
     }
 }

@@ -8,6 +8,7 @@ import servicebots.ProxyCommon;
 import servicebots.entities.EntityBuilderBot;
 import servicebots.entities.EntityEleBot;
 import servicebots.block.ChargeBlock;
+import servicebots.tileentities.TileEntityChargeBlock;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -18,7 +19,7 @@ public class ProxyClient extends ProxyCommon{
             super.onModPreInit(evt);
         RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderEleBot());
         RenderingRegistry.registerEntityRenderingHandler(EntityBuilderBot.class, new RenderBuilderBot());
-        ClientRegistry.bindTileEntitySpecialRenderer(ChargeBlock.class, new RenderChargeBlock();
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityChargeBlock.class, new RenderChargeBlock());
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){
