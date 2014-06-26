@@ -9,7 +9,7 @@ import servicebots.ServiceBots;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class EntityEleBot extends EntityCreature implements IAnimals {
+public class EntityEleBot extends EntityCreature implements IAnimals{
     public EntityEleBot(World world){
         super(world);
         //initial variables

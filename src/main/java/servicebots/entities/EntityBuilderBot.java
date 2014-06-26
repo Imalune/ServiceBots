@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class EntityBuilderBot extends EntityLiving {
+public class EntityBuilderBot extends EntityCreature implements IAnimals{
     public EntityBuilderBot(World world){
         super(world);
         //initial variables

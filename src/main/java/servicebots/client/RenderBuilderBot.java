@@ -24,8 +24,8 @@ public class RenderBuilderBot extends Render {
     {
         GL11.glPushMatrix();
         GL11.glTranslated(x, y, z);
-        GL11.glTranslatef(0f, .5f, .25f);
-        GL11.glScalef(.45f, -.45f, -.45f);
+        GL11.glTranslatef(0f, 1f, .25f);
+        GL11.glScalef(.45f, .45f, .45f);
         bindTexture(texture);
         model.renderAll();
         GL11.glPopMatrix();
