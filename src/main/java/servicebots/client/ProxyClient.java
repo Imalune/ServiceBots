@@ -1,13 +1,13 @@
 package servicebots.client;
 
+import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraft.client.model.ModelBiped;
-import net.minecraft.client.renderer.entity.RenderBiped;
 import servicebots.ProxyCommon;
 import servicebots.entities.EntityBuilderBot;
 import servicebots.entities.EntityEleBot;
+import servicebots.block.ChargeBlock;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -18,6 +18,7 @@ public class ProxyClient extends ProxyCommon{
             super.onModPreInit(evt);
         RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderEleBot());
         RenderingRegistry.registerEntityRenderingHandler(EntityBuilderBot.class, new RenderBuilderBot());
+        ClientRegistry.bindTileEntitySpecialRenderer(ChargeBlock.class, new RenderChargeBlock();
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){

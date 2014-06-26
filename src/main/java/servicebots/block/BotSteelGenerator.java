@@ -41,7 +41,10 @@ public class BotSteelGenerator extends Block {
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        if (side == MathHelper.floor_float(meta / 2) + 1 || (meta == 0 && side == 3)) {
+        if (side == 1) {
+            return bbotside;
+        }
+       else if (side == MathHelper.floor_float(meta / 2) + 1 || (meta == 0 && side == 3)) {
             return (meta % 2 == 0) ? botgenface : botgenface;
         } else {
             return bbotside;

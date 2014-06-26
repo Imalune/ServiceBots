@@ -23,7 +23,6 @@ public class BotBlocks {
         blockBotSide = new BotSide(Material.iron);
         blockBotStation = new BotStation(Material.iron);
         blockBotSteelGenerator = new BotSteelGenerator(Material.iron);
-        blockChargeBlock = new ChargeBlock(Material.iron);
         blockCompactBuilderBot = new CompactBuilderBot(Material.cake);
         blockCompactEleBot = new CompactEleBot(Material.cake);
         blockEZBotMover = new EZBotMover(Material.iron);
