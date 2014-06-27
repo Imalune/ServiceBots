@@ -23,4 +23,16 @@ public class ChargeBlock extends BlockContainer {
     public TileEntity createNewTileEntity(World world, int stuff){
         return new TileEntityChargeBlock();
     }
+    @Override
+    public boolean renderAsNormalBlock(){
+        return false;
+    }
+    @Override
+    public boolean isOpaqueCube(){
+        return false;
+    }
+    @Override
+    public int getRenderType(){
+        return -1;
+    }
 }

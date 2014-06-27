@@ -6,7 +6,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
 import servicebots.tileentities.TileEntityBotBox;
-import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
  * Created by Imalune on 6/23/2014.
@@ -16,7 +15,6 @@ public class BotBox extends BlockContainer{
     super(material);
     setCreativeTab(ServiceBots.cTab);
     setBlockName("BotBox");
-    //setBlockTextureName("ServiceBots:botbox");
     setHardness(3);
     setResistance(4);
     setHarvestLevel("pickaxe",0);
@@ -24,5 +22,17 @@ public class BotBox extends BlockContainer{
     @Override
     public TileEntity createNewTileEntity(World world, int stuff){
         return new TileEntityBotBox();
+    }
+    @Override
+    public boolean renderAsNormalBlock(){
+        return false;
+    }
+    @Override
+    public boolean isOpaqueCube(){
+        return false;
+    }
+    @Override
+    public int getRenderType(){
+        return -1;
     }
 }

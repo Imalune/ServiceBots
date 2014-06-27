@@ -7,7 +7,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import servicebots.ProxyCommon;
 import servicebots.entities.EntityBuilderBot;
 import servicebots.entities.EntityEleBot;
-import servicebots.block.ChargeBlock;
+import servicebots.tileentities.TileEntityBotBox;
 import servicebots.tileentities.TileEntityChargeBlock;
 
 /**
@@ -20,6 +20,7 @@ public class ProxyClient extends ProxyCommon{
         RenderingRegistry.registerEntityRenderingHandler(EntityEleBot.class, new RenderEleBot());
         RenderingRegistry.registerEntityRenderingHandler(EntityBuilderBot.class, new RenderBuilderBot());
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityChargeBlock.class, new RenderChargeBlock());
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBotBox.class, new RenderBotBox());
     }
     @Override
     public void onModInit(FMLInitializationEvent evt){
