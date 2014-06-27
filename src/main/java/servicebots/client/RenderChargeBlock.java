@@ -29,6 +29,7 @@ public class RenderChargeBlock extends TileEntitySpecialRenderer {
     public void renderTileEntityAt(TileEntity par1Entity, double x, double y, double z, float pitch)
     {
         int i = BotBlocks.blockChargeBlock.getLightValue(par1Entity.getWorldObj(), (int)x, (int)y, (int)z);
+        i = 1;
         FMLClientHandler.instance().getClient().getTextureManager().bindTexture(texture);
         GL11.glPushMatrix();
         GL11.glTranslated(x, y, z);
