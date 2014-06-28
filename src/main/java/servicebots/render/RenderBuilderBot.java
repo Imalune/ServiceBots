@@ -1,4 +1,4 @@
-package servicebots.client;
+package servicebots.render;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -10,16 +10,15 @@ import net.minecraftforge.client.model.IModelCustom;
 import org.lwjgl.opengl.GL11;
 import servicebots.ServiceBots;
 
-
 /**
- * Created by Imalune on 6/23/2014.
+ * Created by Imalune on 6/25/2014.
  */
 @SideOnly(Side.CLIENT)
-public class RenderEleBot extends Render {
+public class RenderBuilderBot extends Render {
     private static final IModelCustom model =
-            AdvancedModelLoader.loadModel(new ResourceLocation("servicebots:models/eleFaceConsole.obj"));
+            AdvancedModelLoader.loadModel(new ResourceLocation("servicebots:models/builderBot.obj"));
     private static final ResourceLocation texture =
-            new ResourceLocation(ServiceBots.MODID,"textures/entities/elebot.png");
+            new ResourceLocation(ServiceBots.MODID,"textures/entities/builderbot.png");
     @Override
     public void doRender(Entity par1Entity, double x, double y, double z, float pitch, float yaw)
     {

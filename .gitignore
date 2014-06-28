@@ -1,6 +1,8 @@
-/eclipse
-/out
-/.gradle
-/ServiceBots.iml
-/ServiceBots.iws
-/ServiceBots.ipr
+.gradle/
+build/
+eclipse/
+out/
+src/api/
+*.iml
+*.ipr
+*.iws

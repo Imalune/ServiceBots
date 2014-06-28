@@ -7,6 +7,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import servicebots.ProxyCommon;
 import servicebots.entities.EntityBuilderBot;
 import servicebots.entities.EntityEleBot;
+import servicebots.render.RenderBotBox;
+import servicebots.render.RenderBuilderBot;
+import servicebots.render.RenderChargeBlock;
+import servicebots.render.RenderEleBot;
 import servicebots.tileentities.TileEntityBotBox;
 import servicebots.tileentities.TileEntityChargeBlock;
 
