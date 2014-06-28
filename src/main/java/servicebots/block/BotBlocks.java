@@ -2,6 +2,9 @@ package servicebots.block;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.material.Material;
+import servicebots.tileentities.TileEntityBotBox;
+import servicebots.tileentities.TileEntityChargeBlock;
+import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
  * Created by Imalune on 6/22/2014.
@@ -40,5 +43,8 @@ public class BotBlocks {
         GameRegistry.registerBlock(blockEZBotMover,"EZBotMover");
         GameRegistry.registerBlock(blockFaceConsole,"FaceConsole");
         GameRegistry.registerBlock(blockPerimeterMap,"PerimeterMap");
+        GameRegistry.registerTileEntity(TileEntityBotBox.class, "TileEntityBotBox");
+        GameRegistry.registerTileEntity(TileEntityChargeBlock.class,"TileEntityChargeBlock");
+        GameRegistry.registerTileEntity(TileEntityEZBotMover.class,"TileEntityEZBlockMover");
     }
 }

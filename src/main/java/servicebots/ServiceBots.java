@@ -4,12 +4,14 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import servicebots.block.BotBlocks;
+import servicebots.handlers.GuiHandler;
 import servicebots.items.BotItems;
 import servicebots.creativetab.CreativeTab;
 
@@ -35,6 +37,7 @@ public class ServiceBots {
         BotBlocks.init();
         BotItems.init();
         registerCraftingRecipes();
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     }
     private void registerCraftingRecipes(){
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSide),
