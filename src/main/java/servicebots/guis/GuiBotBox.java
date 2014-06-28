@@ -21,12 +21,14 @@ public class GuiBotBox extends GuiContainer {
     public GuiBotBox (InventoryPlayer inventoryPlayer,
                     TileEntityBotBox tileEntity) {
         super(new ContainerBotBox(inventoryPlayer, tileEntity));
+        xSize = 176;
+        ySize = 232;
     }
 
     @Override
     protected void drawGuiContainerForegroundLayer(int param1, int param2) {
-        fontRendererObj.drawString("BotBox", 8, 6, 4210752);
-        fontRendererObj.drawString(StatCollector.translateToLocal("container.inventory"), 8, ySize - 96 + 2, 4210752);
+        /*fontRendererObj.drawString("BotBox", 8, 6, 4210752);
+        fontRendererObj.drawString(StatCollector.translateToLocal("container.inventory"), 8, ySize - 96 + 2, 4210752);*/
     }
 
     @Override

@@ -16,9 +16,9 @@ public class ContainerBotBox extends Container {
 
     public ContainerBotBox (InventoryPlayer inventoryPlayer, TileEntityBotBox entity) {
         tileEntity = entity;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                addSlotToContainer(new Slot(tileEntity, j + i * 3, 62 + j * 18, 17 + i * 18));
+        for(int y = 0; y < 6; y++){
+            for (int x = 0; x < 9; x++){
+                addSlotToContainer(new Slot(tileEntity, x + y * 9, 8 + x * 18, 30 + y *18));
             }
         }
         bindPlayerInventory(inventoryPlayer);
@@ -31,12 +31,12 @@ public class ContainerBotBox extends Container {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {
                 addSlotToContainer(new Slot(inventoryPlayer, j + i * 9 + 9,
-                        8 + j * 18, 84 + i * 18));
+                        8 + j * 18, 152 + i * 18));
             }
         }
 
         for (int i = 0; i < 9; i++) {
-            addSlotToContainer(new Slot(inventoryPlayer, i, 8 + i * 18, 142));
+            addSlotToContainer(new Slot(inventoryPlayer, i, 8 + i * 18, 209));
         }
     }
 
@@ -51,13 +51,13 @@ public class ContainerBotBox extends Container {
             stack = stackInSlot.copy();
 
             //merges the item into player inventory since its in the tileEntity
-            if (slot < 9) {
+            if (slot < 54) {
                 if (!this.mergeItemStack(stackInSlot, 0, 35, true)) {
                     return null;
                 }
             }
             //places it into the tileEntity is possible since its in the player inventory
-            else if (!this.mergeItemStack(stackInSlot, 0, 9, false)) {
+            else if (!this.mergeItemStack(stackInSlot, 0, 54, false)) {
                 return null;
             }
 
