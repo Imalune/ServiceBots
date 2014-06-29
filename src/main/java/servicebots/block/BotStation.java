@@ -75,8 +75,7 @@ public class BotStation extends Block {
     @Override
    public boolean onBlockActivated(World world, int x, int y, int z,
         EntityPlayer player, int metadata, float what, float these, float are) {
-            TileEntity tileEntity = world.getTileEntity(x, y, z);
-            if (tileEntity == null || player.isSneaking()) {
+            if (player.isSneaking()) {
                 return false;
             }
             player.openGui(ServiceBots.instance, ServiceBots.GUIID.BotStation.ordinal(), world, x, y, z);
