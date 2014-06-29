@@ -3,6 +3,7 @@ package servicebots.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
@@ -24,5 +25,16 @@ public class EZBotMover extends BlockContainer {
     @Override
     public TileEntity createNewTileEntity(World world, int stuff){
         return new TileEntityEZBotMover();
+    }
+
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z,
+                                    EntityPlayer player, int metadata, float what, float these, float are) {
+        TileEntity tileEntity = world.getTileEntity(x, y, z);
+        if (tileEntity == null || player.isSneaking()) {
+            return false;
+        }
+        player.openGui(ServiceBots.instance, ServiceBots.GUIID.EZBotMover.ordinal(), world, x, y, z);
+        return true;
     }
 }

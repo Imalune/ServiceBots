@@ -6,19 +6,20 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import servicebots.tileentities.TileEntityBotBox;
+import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
  * Created by Imalune on 6/28/2014.
  */
-public class ContainerBotBox extends Container {
+public class ContainerEZBotMover extends Container {
 
-    protected TileEntityBotBox tileEntity;
+    protected TileEntityEZBotMover tileEntity;
 
-    public ContainerBotBox (InventoryPlayer inventoryPlayer, TileEntityBotBox entity) {
+    public ContainerEZBotMover (InventoryPlayer inventoryPlayer, TileEntityEZBotMover entity) {
         tileEntity = entity;
-        for(int y = 0; y < 6; y++){
+        for(int y = 0; y < 3; y++){
             for (int x = 0; x < 9; x++){
-                addSlotToContainer(new Slot(tileEntity, x + y * 9, 8 + x * 18, 30 + y *18));
+                addSlotToContainer(new Slot(tileEntity, x + y * 9, 9 + x * 18, 13 + y *18));
             }
         }
         bindPlayerInventory(inventoryPlayer);
@@ -31,12 +32,12 @@ public class ContainerBotBox extends Container {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {
                 addSlotToContainer(new Slot(inventoryPlayer, j + i * 9 + 9,
-                        8 + j * 18, 152 + i * 18));
+                        8 + j * 18, 84 + i * 18));
             }
         }
 
         for (int i = 0; i < 9; i++) {
-            addSlotToContainer(new Slot(inventoryPlayer, i, 8 + i * 18, 209));
+            addSlotToContainer(new Slot(inventoryPlayer, i, 8 + i * 18, 142));
         }
     }
 
@@ -49,12 +50,12 @@ public class ContainerBotBox extends Container {
             ItemStack stackInSlot = slotObject.getStack();
             stack = stackInSlot.copy();
 
-            if (slot >= 54) {
-                if (!super.mergeItemStack(stackInSlot, 0, 54, false)) {
+            if (slot >= 27) {
+                if (!super.mergeItemStack(stackInSlot, 0, 27, false)) {
                     return null;
                 }
             }
-            else if (!this.mergeItemStack(stackInSlot, 54, 90, false)) {
+            else if (!this.mergeItemStack(stackInSlot, 27, 23, false)) {
                 return null;
             }
 

@@ -35,4 +35,9 @@ public class ChargeBlock extends BlockContainer {
     public int getRenderType(){
         return -1;
     }
+
+    //@Override
+   // public TileEntity createNewTileEntity(World world, int stuff) {
+       // return new TileEntityChargeBlock();
+ //   }
 }

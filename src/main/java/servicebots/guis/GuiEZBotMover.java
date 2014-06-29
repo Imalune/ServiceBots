@@ -8,26 +8,26 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import servicebots.ServiceBots;
 import servicebots.containers.ContainerBotBox;
+import servicebots.containers.ContainerEZBotMover;
 import servicebots.tileentities.TileEntityBotBox;
+import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
  * Created by Imalune on 6/28/2014.
  */
 @SideOnly(Side.CLIENT)
-public class GuiBotBox extends GuiContainer {
+public class GuiEZBotMover extends GuiContainer {
     private static final ResourceLocation texture =
-            new ResourceLocation(ServiceBots.MODID,"textures/guis/botboxinventory.png");
-    public GuiBotBox (InventoryPlayer inventoryPlayer,
-                    TileEntityBotBox tileEntity) {
-        super(new ContainerBotBox(inventoryPlayer, tileEntity));
+            new ResourceLocation(ServiceBots.MODID,"textures/guis/ezbotmoverinventory.png");
+    public GuiEZBotMover (InventoryPlayer inventoryPlayer,
+                      TileEntityEZBotMover tileEntity) {
+        super(new ContainerEZBotMover(inventoryPlayer, tileEntity));
         xSize = 176;
-        ySize = 232;
+        ySize = 166;
     }
 
     @Override
     protected void drawGuiContainerForegroundLayer(int param1, int param2) {
-        /*fontRendererObj.drawString("BotBox", 8, 6, 4210752);
-        fontRendererObj.drawString(StatCollector.translateToLocal("container.inventory"), 8, ySize - 96 + 2, 4210752);*/
     }
 
     @Override

@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
@@ -71,12 +72,14 @@ public class BotStation extends Block {
         }
 
     }
-    public boolean onBlockActivated(World world, int var1, int var2, int var3, EntityPlayer player, int var4, float float1, float float2, float float3) {
-        if (world.isRemote) {
-            return true;
-        } else {
-            player.displayGUIWorkbench(var1, var2, var3);
+    @Override
+   public boolean onBlockActivated(World world, int x, int y, int z,
+        EntityPlayer player, int metadata, float what, float these, float are) {
+            TileEntity tileEntity = world.getTileEntity(x, y, z);
+            if (tileEntity == null || player.isSneaking()) {
+                return false;
+            }
+            player.openGui(ServiceBots.instance, ServiceBots.GUIID.BotStation.ordinal(), world, x, y, z);
             return true;
         }
-    }
 }

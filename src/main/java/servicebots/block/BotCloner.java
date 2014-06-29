@@ -7,21 +7,23 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
+import servicebots.tileentities.TileEntityBotCloner;
 
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class BotSteelGenerator extends Block {
+public class BotCloner extends Block {
     @SideOnly(Side.CLIENT)
     private IIcon botgenface;
     @SideOnly(Side.CLIENT)
     private IIcon bbotside;
 
-    BotSteelGenerator(Material material) {
+    BotCloner(Material material) {
         super(material);
         setBlockName("BotSteelGenerator");
         setResistance(4);
@@ -71,4 +73,8 @@ public class BotSteelGenerator extends Block {
             world.setBlockMetadataWithNotify(x, y, z, 6, 2);
         }
     }
+    //@Override
+    //public TileEntity createNewTileEntity(World world, int stuff) {
+     //   return new TileEntityBotCloner();
+    //}
 }

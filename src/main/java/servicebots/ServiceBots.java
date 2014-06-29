@@ -11,6 +11,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import servicebots.block.BotBlocks;
+import servicebots.block.BotStation;
 import servicebots.handlers.GuiHandler;
 import servicebots.items.BotItems;
 import servicebots.creativetab.CreativeTab;
@@ -26,6 +27,12 @@ public class ServiceBots {
     public static ServiceBots instance;
     @SidedProxy(serverSide="servicebots.ProxyCommon",clientSide = "servicebots.client.ProxyClient")
     public static ProxyCommon proxy;
+
+    public enum GUIID {
+        BotBox,
+        EZBotMover,
+        BotStation
+    }
 
     @Mod.EventHandler
     public void ini(FMLPreInitializationEvent nevent)
@@ -46,7 +53,7 @@ public class ServiceBots {
                "B B"," C ","   ",'B',BotItems.itemBotSteel,'C',Blocks.crafting_table);
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemBotSteel),
                 "DDD","DID","DDD",'D', Blocks.dirt,'I',BotItems.itemIronChunk);
-        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotSteelGenerator),
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotCloner),
                "BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockChargeBlock),
                 "SPS","TGT","TTT",'S',BotItems.itemStarter,'P',BotItems.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);

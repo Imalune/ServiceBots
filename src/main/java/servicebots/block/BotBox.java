@@ -48,7 +48,7 @@ public class BotBox extends BlockContainer {
         if (tileEntity == null || player.isSneaking()) {
             return false;
         }
-        player.openGui(ServiceBots.instance, 0, world, x, y, z);
+        player.openGui(ServiceBots.instance, ServiceBots.GUIID.BotBox.ordinal(), world, x, y, z);
         return true;
     }
 }
