@@ -7,6 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
  */
 public class BotItems {
     public static BotSteel itemBotSteel;
+    public static ClonedBotSteel itemClonedBotSteel;
     public static Compactor itemCompactor;
     public static CompactorChip itemCompactorChip;
     public static Console itemConsole;
@@ -17,6 +18,7 @@ public class BotItems {
 
     public static void init(){
         itemBotSteel = new BotSteel();
+        itemClonedBotSteel = new ClonedBotSteel();
         itemCompactor = new Compactor();
         itemCompactorChip = new CompactorChip();
         itemConsole = new Console();
@@ -26,6 +28,7 @@ public class BotItems {
         itemStarter = new Starter();
 
         GameRegistry.registerItem(itemBotSteel,"BotSteel");
+        GameRegistry.registerItem(itemClonedBotSteel,"ClonedBotSteel");
         GameRegistry.registerItem(itemCompactor,"Compactor");
         GameRegistry.registerItem(itemCompactorChip,"CompactorChip");
         GameRegistry.registerItem(itemConsole,"Console");

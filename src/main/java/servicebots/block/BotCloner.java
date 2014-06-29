@@ -17,6 +17,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import servicebots.ServiceBots;
 import servicebots.tileentities.TileEntityBotCloner;
 
 import java.util.Random;
@@ -96,25 +97,18 @@ public class BotCloner extends BlockContainer {
         this.clonerface = register.registerIcon("ServiceBots:botsteelgenface");
         this.bbotside = register.registerIcon("ServiceBots:bbotside");
     }
-    public boolean onBlockActivated(World world, int var1, int var2, int var3, EntityPlayer player, int var4, float flo, float floa, float fload)
-    {
-        if (world.isRemote)
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float what, float these, float are) {
         {
-            return true;
-        }
-        else
-        {
-            TileEntityBotCloner tileentitybotcloner = (TileEntityBotCloner)world.getTileEntity(var1, var2, var3);
-
-            if (tileentitybotcloner != null)
-            {
-                player.func_146101_a(tileentitybotcloner);
+            TileEntity tileEntity = world.getTileEntity(x, y, z);
+            if (tileEntity == null || player.isSneaking()) {
+                return false;
+            } else {
+                player.openGui(ServiceBots.instance, ServiceBots.GUIID.BotCloner.ordinal(), world, x, y, z);
+                return true;
             }
-
-            return true;
         }
     }
-
     /**
      * Update which block the furnace is using depending on whether or not it is burning
      */

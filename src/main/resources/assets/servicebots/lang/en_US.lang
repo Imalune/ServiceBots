@@ -21,3 +21,4 @@ tile.BotBox.name=BotBox
 tile.CompactBuilderBot.name=Compact BuilderBot
 tile.CompactEleBot.name=Compact Ele-Bot
 entity.BuilderBot.name=BuilderBot
+item.ClonedBotSteel.name=Cloned BotSteel

@@ -31,7 +31,8 @@ public class ServiceBots {
     public enum GUIID {
         BotBox,
         EZBotMover,
-        BotStation
+        BotStation,
+        BotCloner
     }
 
     @Mod.EventHandler
