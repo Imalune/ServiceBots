@@ -9,6 +9,7 @@ import servicebots.containers.ContainerBotBox;
 import servicebots.containers.ContainerBotStation;
 import servicebots.containers.ContainerEZBotMover;
 import servicebots.guis.GuiBotBox;
+import servicebots.guis.GuiBotStation;
 import servicebots.guis.GuiEZBotMover;
 import servicebots.tileentities.TileEntityBotBox;
 import servicebots.tileentities.TileEntityEZBotMover;
@@ -42,6 +43,9 @@ public class GuiHandler implements IGuiHandler {
         }
         else if ( id == ServiceBots.GUIID.EZBotMover.ordinal() && tileEntity instanceof TileEntityEZBotMover){
             return new GuiEZBotMover(player.inventory,(TileEntityEZBotMover) tileEntity);
+        }
+        else if ( id ==ServiceBots.GUIID.BotStation.ordinal()){
+            return new GuiBotStation(player.inventory,world,x,y,z);
         }
         return null;
 
