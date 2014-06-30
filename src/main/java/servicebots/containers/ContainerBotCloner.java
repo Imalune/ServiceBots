@@ -14,7 +14,7 @@ import java.awt.*;
 /**
  * Created by Imalune on 6/28/2014.
  */
-public class ContainerBotCloner extends Container
+/*public class ContainerBotCloner extends Container
 {
     private TileEntityBotCloner botCloner;
     private int lastCookTime = 0;
@@ -175,4 +175,4 @@ public class ContainerBotCloner extends Container
 
         return var3;
     }
-}
+} */

@@ -5,13 +5,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import org.lwjgl.opengl.GL11;
-import servicebots.containers.ContainerBotCloner;
+//import servicebots.containers.ContainerBotCloner;
 import servicebots.tileentities.TileEntityBotCloner;
 
 /**
  * Created by Imalune on 6/28/2014.
  */
-@SideOnly(Side.CLIENT)
+/*@SideOnly(Side.CLIENT)
 public class GuiBotCloner extends GuiContainer
 {
    private TileEntityBotCloner furnaceInventory;
@@ -45,4 +45,4 @@ public class GuiBotCloner extends GuiContainer
         var7 = this.furnaceInventory.getCookProgressScaled(24);
         this.drawTexturedModalRect(var5 + 79, var6 + 34, 176, 14, var7 + 1, 16);
     }
-}
+}*/

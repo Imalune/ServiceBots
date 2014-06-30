@@ -12,18 +12,18 @@ import java.util.Map;
 /**
  * Created by Imalune on 6/28/2014.
  */
-public class BotClonerRecipes {
+/*public class BotClonerRecipes {
     private static final BotClonerRecipes smeltingBase = new BotClonerRecipes();
     /**
      * The list of smelting results.
      */
-    private Map smeltingList = new HashMap();
+   /* private Map smeltingList = new HashMap();
     private Map experienceList = new HashMap();
 
     /**
      * Used to call methods addSmelting and getSmeltingResult.
      */
-   public static BotClonerRecipes smelting() {
+  /* public static BotClonerRecipes smelting() {
         return smeltingBase;
     }
 
@@ -47,7 +47,7 @@ public class BotClonerRecipes {
     /**
      * Returns the smelting result of an item.
      */
-    public ItemStack getSmeltingResult(ItemStack stack) {
+   /* public ItemStack getSmeltingResult(ItemStack stack) {
         Iterator iterator = this.smeltingList.entrySet().iterator();
         Map.Entry entry;
 
@@ -89,4 +89,4 @@ public class BotClonerRecipes {
 
         return ((Float) entry.getValue()).floatValue();
     }
-}
+} */

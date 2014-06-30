@@ -9,7 +9,7 @@ import servicebots.recipes.BotClonerRecipes;
 /**
  * Created by Imalune on 6/29/2014.
  */
-public class BotClonerSlot extends Slot
+/*public class BotClonerSlot extends Slot
 {
     private EntityPlayer thePlayer;
     private int var1;
@@ -56,4 +56,4 @@ public class BotClonerSlot extends Slot
             int var4;
         }
     }
-}
+}*/

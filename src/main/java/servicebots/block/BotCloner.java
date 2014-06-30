@@ -24,7 +24,7 @@ import java.util.Random;
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class BotCloner extends BlockContainer {
+/*public class BotCloner extends BlockContainer {
     private final Random random = new Random();
     private final boolean bool;
     private static boolean bools;
@@ -96,7 +96,7 @@ public class BotCloner extends BlockContainer {
         this.clonerface = register.registerIcon("ServiceBots:botsteelgenface");
         this.bbotside = register.registerIcon("ServiceBots:bbotside");
     }
-    @Override
+  /*  @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int metadata, float what, float these, float are) {
         {
             TileEntity tileEntity = world.getTileEntity(x, y, z);
@@ -111,7 +111,7 @@ public class BotCloner extends BlockContainer {
     /**
      * Update which block the furnace is using depending on whether or not it is burning
      */
-    public static void updateFurnaceBlockState(boolean boo, World world, int var1, int var2, int var3)
+  /*  public static void updateFurnaceBlockState(boolean boo, World world, int var1, int var2, int var3)
     {
         int l = world.getBlockMetadata(var1, var2, var3);
         TileEntity tileentity = world.getTileEntity(var1, var2, var3);
@@ -224,4 +224,4 @@ public class BotCloner extends BlockContainer {
     {
         return Item.getItemFromBlock(BotBlocks.blockBotCloner);
     }
-}
+}*/
