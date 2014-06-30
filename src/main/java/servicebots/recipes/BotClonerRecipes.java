@@ -1,10 +1,7 @@
 package servicebots.recipes;
 
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemFishFood;
 import net.minecraft.item.ItemStack;
 import servicebots.items.BotItems;
 
@@ -15,18 +12,18 @@ import java.util.Map;
 /**
  * Created by Imalune on 6/28/2014.
  */
-/*public class BotClonerRecipes {
+public class BotClonerRecipes {
     private static final BotClonerRecipes smeltingBase = new BotClonerRecipes();
     /**
      * The list of smelting results.
      */
-   // private Map smeltingList = new HashMap();
-    //private Map experienceList = new HashMap();*/
+    private Map smeltingList = new HashMap();
+    private Map experienceList = new HashMap();
 
     /**
      * Used to call methods addSmelting and getSmeltingResult.
      */
-   /* public static BotClonerRecipes smelting() {
+   public static BotClonerRecipes smelting() {
         return smeltingBase;
     }
 
@@ -45,12 +42,12 @@ import java.util.Map;
     public void func_151394_a(ItemStack stack, ItemStack stack2, float float1) {
         this.smeltingList.put(stack, stack2);
         this.experienceList.put(stack2, Float.valueOf(float1));
-    }*/
+    }
 
     /**
      * Returns the smelting result of an item.
      */
-   /* public ItemStack getSmeltingResult(ItemStack stack) {
+    public ItemStack getSmeltingResult(ItemStack stack) {
         Iterator iterator = this.smeltingList.entrySet().iterator();
         Map.Entry entry;
 
@@ -92,4 +89,4 @@ import java.util.Map;
 
         return ((Float) entry.getValue()).floatValue();
     }
-}*/
+}

@@ -13,13 +13,13 @@ import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
-//import servicebots.block.BotCloner;
-//import servicebots.recipes.BotClonerRecipes;
+import servicebots.block.BotCloner;
+import servicebots.recipes.BotClonerRecipes;
 
 /**
  * Created by Imalune on 6/28/2014.
  */
-/*public class TileEntityBotCloner extends TileEntity implements ISidedInventory
+public class TileEntityBotCloner extends TileEntity implements ISidedInventory
 {
     private static final int[] slotsTop = new int[] {0};
     private static final int[] slotsBottom = new int[] {2, 1};
@@ -390,4 +390,4 @@ import net.minecraft.tileentity.TileEntity;
     {
         return var2 != 0 || var1 != 1 || stack.getItem() == Items.bucket;
     }
-}*/
+}

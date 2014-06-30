@@ -54,8 +54,8 @@ public class ServiceBots {
                "B B"," C ","   ",'B',BotItems.itemBotSteel,'C',Blocks.crafting_table);
         GameRegistry.addShapedRecipe(new ItemStack(BotItems.itemBotSteel),
                 "DDD","DID","DDD",'D', Blocks.dirt,'I',BotItems.itemIronChunk);
-       // GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotCloner),
-               //"BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
+        GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockBotCloner),
+               "BHB","SRS","BHB",'B',BotItems.itemBotSteel,'H',BotItems.itemHoloClip,'S', Blocks.stone,'R',Items.redstone);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockChargeBlock),
                 "SPS","TGT","TTT",'S',BotItems.itemStarter,'P',BotItems.itemSparkStarter,'T',Blocks.stone,'G',Blocks.glass);
         GameRegistry.addShapedRecipe(new ItemStack(BotBlocks.blockCompactBuilderBot),
