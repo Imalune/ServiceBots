@@ -1,12 +1,10 @@
 package servicebots.containers;
 
 import cpw.mods.fml.relauncher.SideOnly;
-import javafx.geometry.Side;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
 import servicebots.recipes.BotClonerRecipes;
 import servicebots.tileentities.TileEntityBotCloner;
@@ -23,12 +21,12 @@ public class ContainerBotCloner extends Container
     private int lastBurnTime = 0;
     private int lastItemBurnTime = 0;
 
-    public ContainerBotCloner(InventoryPlayer par1InventoryPlayer, TileEntityBotCloner par2TileEntityFurnace)
+    public ContainerBotCloner(InventoryPlayer par1InventoryPlayer, TileEntityBotCloner botCloner)
     {
-        this.botCloner = par2TileEntityFurnace;
-        this.addSlotToContainer(new Slot(par2TileEntityFurnace, 0, 56, 17));
-        this.addSlotToContainer(new Slot(par2TileEntityFurnace, 1, 56, 53));
-        this.addSlotToContainer(new SlotFurnace(par1InventoryPlayer.player, par2TileEntityFurnace, 2, 116, 35));
+        this.botCloner = botCloner;
+        this.addSlotToContainer(new Slot(botCloner, 0, 56, 17));
+        this.addSlotToContainer(new Slot(botCloner, 1, 56, 53));
+        this.addSlotToContainer(new BotClonerSlot(par1InventoryPlayer.player, botCloner, 2, 116, 35));
         int var3;
 
         for (var3 = 0; var3 < 3; ++var3)

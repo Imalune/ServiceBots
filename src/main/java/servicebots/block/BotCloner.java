@@ -120,11 +120,11 @@ public class BotCloner extends BlockContainer {
 
         if (boo)
         {
-            world.setBlock(var1, var2, var3, Blocks.lit_furnace);
+            world.setBlock(var1, var2, var3, BotBlocks.blockBotCloner);
         }
         else
         {
-            world.setBlock(var1, var2, var3, Blocks.furnace);
+            world.setBlock(var1, var2, var3, BotBlocks.blockBotCloner);
         }
 
         bools = false;
