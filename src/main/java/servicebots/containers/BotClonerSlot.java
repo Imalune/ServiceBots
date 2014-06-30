@@ -4,12 +4,12 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import servicebots.recipes.BotClonerRecipes;
+//import servicebots.recipes.BotClonerRecipes;
 
 /**
  * Created by Imalune on 6/29/2014.
  */
-public class BotClonerSlot extends Slot
+/*public class BotClonerSlot extends Slot
 {
     private EntityPlayer thePlayer;
     private int var1;
@@ -47,7 +47,7 @@ public class BotClonerSlot extends Slot
         this.onCrafting(stack);
     }
 
-    protected void onCrafting(ItemStack stack) {
+   protected void onCrafting(ItemStack stack) {
         stack.onCrafting(this.thePlayer.worldObj, this.thePlayer, this.var1);
 
         if (!this.thePlayer.worldObj.isRemote) {
@@ -55,5 +55,5 @@ public class BotClonerSlot extends Slot
             float var3 = BotClonerRecipes.smelting().getExperience(stack);
             int var4;
         }
-    }
-}
+    }*/
+//}

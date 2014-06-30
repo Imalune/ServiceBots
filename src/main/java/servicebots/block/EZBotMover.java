@@ -15,7 +15,6 @@ import servicebots.tileentities.TileEntityEZBotMover;
 public class EZBotMover extends BlockContainer {
     EZBotMover(Material material){
         super(material);
-        //setBlockTextureName();
         setCreativeTab(ServiceBots.cTab);
         setBlockName("EZBotMover");
         setHardness(3);
@@ -26,6 +25,22 @@ public class EZBotMover extends BlockContainer {
     public TileEntity createNewTileEntity(World world, int stuff){
         return new TileEntityEZBotMover();
     }
+
+    @Override
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+
+    @Override
+    public boolean isOpaqueCube() {
+        return false;
+    }
+
+    @Override
+    public int getRenderType() {
+        return -1;
+    }
+
 
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z,

@@ -6,15 +6,15 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
-import servicebots.recipes.BotClonerRecipes;
-import servicebots.tileentities.TileEntityBotCloner;
+//import servicebots.recipes.BotClonerRecipes;
+//import servicebots.tileentities.TileEntityBotCloner;
 
 import java.awt.*;
 
 /**
  * Created by Imalune on 6/28/2014.
  */
-public class ContainerBotCloner extends Container
+/*public class ContainerBotCloner extends Container
 {
     private TileEntityBotCloner botCloner;
     private int lastCookTime = 0;
@@ -104,7 +104,7 @@ public class ContainerBotCloner extends Container
         return this.botCloner.isUseableByPlayer(par1EntityPlayer);
     }
 
-    public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
+   /* public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
     {
         ItemStack var3 = null;
         Slot var4 = (Slot)this.inventorySlots.get(par2);
@@ -174,5 +174,5 @@ public class ContainerBotCloner extends Container
         }
 
         return var3;
-    }
-}
+    }*/
+//}

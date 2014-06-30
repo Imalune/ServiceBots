@@ -9,7 +9,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -18,14 +17,14 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
-import servicebots.tileentities.TileEntityBotCloner;
+//import servicebots.tileentities.TileEntityBotCloner;
 
 import java.util.Random;
 
 /**
  * Created by Imalune on 6/23/2014.
  */
-public class BotCloner extends BlockContainer {
+/*public class BotCloner extends BlockContainer {
     private final Random random = new Random();
     private final boolean bool;
     private static boolean bools;
@@ -112,7 +111,7 @@ public class BotCloner extends BlockContainer {
     /**
      * Update which block the furnace is using depending on whether or not it is burning
      */
-    public static void updateFurnaceBlockState(boolean boo, World world, int var1, int var2, int var3)
+   /* public static void updateFurnaceBlockState(boolean boo, World world, int var1, int var2, int var3)
     {
         int l = world.getBlockMetadata(var1, var2, var3);
         TileEntity tileentity = world.getTileEntity(var1, var2, var3);
@@ -224,5 +223,5 @@ public class BotCloner extends BlockContainer {
     public Item getItem(World world, int var1, int var2, int var3)
     {
         return Item.getItemFromBlock(BotBlocks.blockBotCloner);
-    }
-}
+    }*/
+//}

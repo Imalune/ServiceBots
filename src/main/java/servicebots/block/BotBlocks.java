@@ -13,7 +13,7 @@ public class BotBlocks {
     public static BotBox blockBotBox;
     public static BotSide blockBotSide;
     public static BotStation blockBotStation;
-    public static BotCloner blockBotCloner;
+    //public static BotCloner blockBotCloner;
     public static ChargeBlock blockChargeBlock;
     public static CompactBuilderBot blockCompactBuilderBot;
     public static CompactEleBot blockCompactEleBot;
@@ -35,7 +35,7 @@ public class BotBlocks {
         GameRegistry.registerBlock(blockBotBox,"BotBox");
         GameRegistry.registerBlock(blockBotSide,"BotSide");
         GameRegistry.registerBlock(blockBotStation,"BotStation");
-        GameRegistry.registerBlock(blockBotCloner,"BotSteelGenerator");
+       // GameRegistry.registerBlock(blockBotCloner,"BotSteelGenerator");
         GameRegistry.registerBlock(blockChargeBlock,"ChargeBlock");
         GameRegistry.registerBlock(blockCompactBuilderBot,"CompactBuilderBot");
         GameRegistry.registerBlock(blockCompactEleBot,"CompactEleBot");

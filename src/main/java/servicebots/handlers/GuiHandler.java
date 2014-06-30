@@ -6,15 +6,15 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import servicebots.ServiceBots;
 import servicebots.containers.ContainerBotBox;
-import servicebots.containers.ContainerBotCloner;
+//import servicebots.containers.ContainerBotCloner;
 import servicebots.containers.ContainerBotStation;
 import servicebots.containers.ContainerEZBotMover;
 import servicebots.guis.GuiBotBox;
-import servicebots.guis.GuiBotCloner;
+//import servicebots.guis.GuiBotCloner;
 import servicebots.guis.GuiBotStation;
 import servicebots.guis.GuiEZBotMover;
 import servicebots.tileentities.TileEntityBotBox;
-import servicebots.tileentities.TileEntityBotCloner;
+//import servicebots.tileentities.TileEntityBotCloner;
 import servicebots.tileentities.TileEntityEZBotMover;
 
 /**
@@ -34,9 +34,9 @@ public class GuiHandler implements IGuiHandler {
         else if (id == ServiceBots.GUIID.BotStation.ordinal()){
             return new ContainerBotStation(player.inventory,world,x,y,z);
         }
-        else if (id == ServiceBots.GUIID.BotCloner.ordinal() && tileEntity instanceof TileEntityBotCloner){
-            return new ContainerBotCloner(player.inventory, (TileEntityBotCloner)tileEntity);
-        }
+       // else if (id == ServiceBots.GUIID.BotCloner.ordinal() && tileEntity instanceof TileEntityBotCloner){
+           // return new ContainerBotCloner(player.inventory, (TileEntityBotCloner)tileEntity);
+       // }
         return null;
     }
 
@@ -53,9 +53,9 @@ public class GuiHandler implements IGuiHandler {
         else if ( id ==ServiceBots.GUIID.BotStation.ordinal()){
             return new GuiBotStation(player.inventory,world,x,y,z);
         }
-        else if (id == ServiceBots.GUIID.BotCloner.ordinal()){
-            return new GuiBotCloner(player.inventory,(TileEntityBotCloner)tileEntity);
-        }
+       // else if (id == ServiceBots.GUIID.BotCloner.ordinal()){
+            //return new GuiBotCloner(player.inventory,(TileEntityBotCloner)tileEntity);
+       // }
         return null;
 
     }
